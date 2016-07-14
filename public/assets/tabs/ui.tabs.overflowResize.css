@@ -1,0 +1,37 @@
+li[role=tab] {
+	white-space: nowrap;
+	margin: 1px .2em 0 0;
+	padding: 0;
+	overflow: hidden;
+	width: 200px;
+	font-size: 12px;
+	display: flex;
+	margin-right: 0 !important;
+}
+
+li[role=tab] a {
+	font-size: 1em !important;
+	 color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 0px solid #ddd;
+    border-bottom-color: transparent;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+
+li[role=tab] .ui-tabs-anchor{
+	flex: 1;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: transparent;
+   overflow: hidden;
+  outline: 0;
+        border-left: 3px solid #337ab7;
+}
+
+li.button {
+	width: 30px;
+	max-width: 30px;
+}

@@ -1,0 +1,283 @@
+<html lang="en">
+
+	<head>
+		<title>Web School</title>
+
+		
+<link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/theme-default/bootstrap.css" />
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/materialadmin.css" />
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/font-awesome.min.css" /> <!--Font Awesome Icon Font-->
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/material-design-iconic-font.min.css" /> <!--Material Design Iconic Font-->
+		<!-- BEGIN STYLESHEETS -->
+		
+		
+		
+		
+		
+        
+		
+       @yield('page_head')
+	</head>
+
+	<body class="menubar-hoverable header-fixed menubar-pin">
+        <!-- BEGIN HEADER-->
+		
+    <!-- END HEADER-->
+
+    <!-- BEGIN BASE-->
+    <div id="base">
+
+       
+       <div style="text-align: center;">
+                        <a class="btn btn-icon-toggle menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+        <!-- BEGIN MENUBAR-->
+        
+        <div id="menubar" class="menubar-inverse ">
+            <div class="menubar-fixed-panel">
+                <div>
+                    <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="expanded">
+                    <a href="">
+                        <span class="text-lg text-bold text-primary ">CONNECTIFY</span>
+                    </a>
+                </div>
+            </div>
+            <div class="menubar-scroll-panel">
+
+                <!-- BEGIN MAIN MENU -->
+                <ul id="main-menu" class="gui-controls">
+
+                    <!-- BEGIN DASHBOARD -->
+                    <li>
+                        <a href="" class="active">
+                            <div class="gui-icon"><i class="md md-computer"></i></div>
+                            <span class="title">{{ trans('dashboard.Dashboard') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END DASHBOARD -->
+                   
+                    <!-- BEGIN Teachers -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-account-box"></i></div>
+                            <span class="title">{{ trans('dashboard.Teachers') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Teachers -->
+
+
+                    <!-- BEGIN Students -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-school"></i></div>
+                            <span class="title">{{ trans('dashboard.Students') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Students -->
+
+
+
+                    <!-- BEGIN Parents -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-person"></i></div>
+                            <span class="title">{{ trans('dashboard.Parents') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Parents -->
+
+
+                    <!-- BEGIN Users -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-people"></i></div>
+                            <span class="title">{{ trans('dashboard.Users') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Users -->
+                 
+
+
+                    <!-- BEGIN Subjects -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-filter-none"></i></div>
+                            <span class="title">{{ trans('dashboard.Subjects') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Subjects-->
+
+                    <!-- BEGIN Exam -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-poll"></i></div>
+                            <span class="title">{{ trans('dashboard.Exam') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Exam -->
+
+                     <!-- BEGIN Timetable -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-domain"></i></div>
+                            <span class="title">{{ trans('dashboard.Timetable') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Timetable -->
+
+                    <!-- BEGIN Upload -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-file-upload"></i></div>
+                            <span class="title">{{ trans('dashboard.Upload') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Upload -->
+
+                      <!-- BEGIN Attendance -->
+                  
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-event-note"></i></div>
+                            <span class="title">{{ trans('dashboard.Attendance') }}</span>
+                        </a>
+                    </li>
+                 
+
+
+                    <!-- BEGIN Marks -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-grade"></i></div>
+                            <span class="title">{{ trans('dashboard.Marks') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Marks -->
+
+
+                    <!-- BEGIN Grade-->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-plus-one
+
+"></i></div>
+                            <span class="title">{{ trans('admin.Grade') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Grade -->
+
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-assignment"></i></div>
+                            <span class="title">{{ trans('admin.Pratice Paper') }}</span>
+                        </a>
+                    </li>
+
+                    <!-- BEGIN Class -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-style"></i></div>
+                            <span class="title">{{ trans('dashboard.Class') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Class -->
+                   
+                    <!-- BEGIN Section -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-view-module"></i></div>
+                            <span class="title">{{ trans('admin.Sections') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END section -->
+                 
+
+
+                    <!--end /menu-li -->
+                    <!-- END MArks -->
+
+               
+                    <!-- BEGIN Board -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-check-box-outline-blank"></i></div>
+                            <span class="title">{{ trans('admin.Boards') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Board -->
+                 
+
+ <!-- BEGIN ContactUs -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-quick-contacts-mail
+"></i></div>
+                            <span class="title">{{ trans('dashboard.Contact Us') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END ContactUs -->
+
+
+                    
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-settings-backup-restore"></i></div>
+                            <span class="title">{{ trans('dashboard.Go to back page') }}</span>
+                        </a>
+                    </li>
+                 
+
+                </ul>
+                <!--end .main-menu -->
+                <!-- END MAIN MENU -->
+
+                <div class="menubar-foot-panel">
+                </div>
+
+            </div>
+            <!--end .menubar-scroll-panel-->
+        </div>
+        <!--end #menubar-->
+        <!-- END MENUBAR -->
+
+
+        </div><!--end #base-->
+		<!-- END BASE -->
+
+		<!-- BEGIN JAVASCRIPT -->
+
+		<script src="{{URL::to('assets')}}/sidebar/jquery-1.11.2.min.js"></script>
+		
+		
+	
+       
+		
+		<!-- Put App.js last in your javascript imports -->
+		
+
+       
+        @yield('page_footer')
+        <script src="{{URL::to('assets')}}/sidebar/App.min.js"></script>
+	</body>
+</html>
