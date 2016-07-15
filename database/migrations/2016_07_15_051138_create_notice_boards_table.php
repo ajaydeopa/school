@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateNoticeBoardsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,13 +12,13 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('notice_boards', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('email')->unique();
-            $table->string('password');
             $table->string('collegeid');
-            $table->integer('user_type'); // 0 for super admin, 1 for admin, 2 for teachers, 3 for students, 4 for parents.
-            $table->rememberToken();
+            $table->string('title');
+            $table->timestamp('date_of_action');
+            $table->string('body');
+            $table->timestamp('published_at');
         });
     }
 
@@ -29,6 +29,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::drop('notice_boards');
     }
 }

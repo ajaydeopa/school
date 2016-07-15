@@ -11,31 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('test', function () {
-    return view('test');
-});
-Route::get('test1', function () {
-    return view('test1');
-});
-Route::get('test2', function () {
-    return view('test2');
-});
 
-Route::get('sidebar1', function () {
-    return view('sidebar1');
-});
-Route::get('sidebar2', function () {
-    return view('sidebar2');
-});
-Route::get('sidebar3', function () {
-    return view('sidebar3');
-});
-Route::get('sidebar4', function () {
-    return view('sidebar4');
-});
-Route::get('tabs', function () {
-    return view('sidebar41');
+Route::group(['middlewareGroups' => ['web']], function(){
+	Route::auth();
+
+    Route::group(['middleware' => 'guest'], function(){
+    	Route::get('/', function(){
+	        return view('pages.index');
+	    });
+    });
+
+    Route::group(['middleware' => 'auth'], function(){
+    	Route::get('dashboard', function(){
+	        return view('pages.dashboard');
+	    });
+
+    	//write all routes here
+
+
+    });
 });
