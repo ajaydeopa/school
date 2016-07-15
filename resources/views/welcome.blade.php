@@ -1,4 +1,4 @@
-@extends('layout.app') 
+@extends('layout.app1')
 
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
@@ -28,14 +28,14 @@
                 display: inline-block;
             }
 
-            .title {
+            .title1 {
                 font-size: 96px;
             }
         </style>
     @section('content')
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title1">Laravel 5</div>
             </div>
         </div>
  

@@ -589,7 +589,7 @@ details,
 figcaption,
 figure,
 footer,
-header,
+header1,
 hgroup,
 main,
 menu,
@@ -785,7 +785,7 @@ th {
     page-break-inside: avoid;
   }
   thead {
-    display: table-header-group;
+    display: table-header1-group;
   }
   tr,
   img {
@@ -1386,7 +1386,7 @@ th {
 .glyphicon-cutlery:before {
   content: "\e179";
 }
-.glyphicon-header:before {
+.glyphicon-header1:before {
   content: "\e180";
 }
 .glyphicon-compressed:before {
@@ -1949,7 +1949,7 @@ a.bg-warning:hover {
 a.bg-danger:hover {
   background-color: #f4aca7;
 }
-.page-header {
+.page-header1 {
   padding-bottom: 11px;
   margin: 48px 0 24px;
   border-bottom: 1px solid #e5e6e6;
@@ -4314,7 +4314,7 @@ tbody.collapse.in {
   left: 0;
   right: auto;
 }
-.dropdown-header {
+.dropdown-header1 {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
@@ -4922,7 +4922,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 @media (min-width: 769px) {
-  .navbar-header {
+  .navbar-header1 {
     float: left;
   }
 }
@@ -4970,16 +4970,16 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     max-height: 200px;
   }
 }
-.container > .navbar-header,
-.container-fluid > .navbar-header,
+.container > .navbar-header1,
+.container-fluid > .navbar-header1,
 .container > .navbar-collapse,
 .container-fluid > .navbar-collapse {
   margin-right: -12px;
   margin-left: -12px;
 }
 @media (min-width: 769px) {
-  .container > .navbar-header,
-  .container-fluid > .navbar-header,
+  .container > .navbar-header1,
+  .container-fluid > .navbar-header1,
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-right: 0;
@@ -5085,7 +5085,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     box-shadow: none;
   }
   .navbar-nav .open .dropdown-menu > li > a,
-  .navbar-nav .open .dropdown-menu .dropdown-header {
+  .navbar-nav .open .dropdown-menu .dropdown-header1 {
     padding: 5px 15px 5px 25px;
   }
   .navbar-nav .open .dropdown-menu > li > a {
@@ -5389,7 +5389,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ffffff;
 }
 @media (max-width: 768px) {
-  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header1 {
     border-color: #080808;
   }
   .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
@@ -6619,12 +6619,12 @@ button.close {
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
-.modal-header {
+.modal-header1 {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
   min-height: 16.846153846px;
 }
-.modal-header .close {
+.modal-header1 .close {
   margin-top: -2px;
 }
 .modal-title {
@@ -7143,8 +7143,8 @@ button.close {
 .nav:after,
 .navbar:before,
 .navbar:after,
-.navbar-header:before,
-.navbar-header:after,
+.navbar-header1:before,
+.navbar-header1:after,
 .navbar-collapse:before,
 .navbar-collapse:after,
 .pager:before,
@@ -7166,7 +7166,7 @@ button.close {
 .btn-group-vertical > .btn-group:after,
 .nav:after,
 .navbar:after,
-.navbar-header:after,
+.navbar-header1:after,
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,

@@ -13,37 +13,37 @@
 
     <link href="{{URL::to('assets')}}/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
     <link href="{{URL::to('assets')}}/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" rel="stylesheet">
-    <link href="{{URL::to('assets')}}/vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">       
-            
+    <link href="{{URL::to('assets')}}/vendors/bower_components/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet">
+
         <!-- CSS -->
          <link href="{{URL::to('assets')}}/css/app.min.1.css" rel="stylesheet">
 
     <link href="{{URL::to('assets')}}/css/app.min.2.css" rel="stylesheet">
-        
+
 
         <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/materialadmin.css" />
-        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/font-awesome.min.css" /> 
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/font-awesome.min.css" />
          <!--Font Awesome Icon Font
        <!-- <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/theme-default/bootstrap.css" />
-       
-        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/material-design-iconic-font.min.css" /> 
+
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/material-design-iconic-font.min.css" />
 		-->
 	<style>
-        
+
         #position
         {
             text-align:center;
             padding: 11px;}
-        
+
         </style>
 	</head>
 
 	<body class="menubar-hoverable header-fixed ">
         <!-- BEGIN HEADER-->
-		        
-         
+
+
  <!--Top Header-->
-        
+
                 <header id="header" data-current-skin="blue">
             <ul class="header-inner">
                 <li id="menu-trigger" data-trigger="#sidebar">
@@ -60,7 +60,7 @@
 
               <li class="pull-right">
                     <ul class="top-menu">
-    <!-- Message-->       
+    <!-- Message-->
                       <li class="dropdown">
                             <a data-toggle="dropdown" href="">
                                 <i class="tm-icon zmdi zmdi-email"></i>
@@ -280,7 +280,7 @@
                             </div>
                         </li>
    <!--End Task-->
-                       
+
                     </ul>
                 </li>
             </ul>
@@ -288,11 +288,11 @@
     <!--End Top Header-->
         <div id="base">
         <section id="main" data-layout="layout-1">
-            
+
    <!-- BEGIN MENUBAR-->
-        
+
         <div id="menubar" class="menubar-inverse ">
-           
+
             <div class="menubar-scroll-panel">
  <div class="c-overflow" style="height:600px;">
                 <!-- BEGIN MAIN MENU -->
@@ -307,12 +307,12 @@
                     </li>
                     <!--end /menu-li -->
                     <!-- END DASHBOARD -->
-                   
+
                     <!-- BEGIN Teachers -->
                     <li id="2">
                         <a href="">
                             <div class="gui-icon" ><i class="zmdi zmdi-tab zmdi-hc-fw" id="position"></i></div>
-                            
+
                             <span class="title">Other</span>
                         </a>
                     </li>
@@ -321,11 +321,11 @@
 
 
 
-                 
 
 
 
-                   
+
+
 
                     <li id="3">
                         <a href="">
@@ -343,7 +343,7 @@
                     </li>
                     <!--end /menu-li -->
                     <!-- END Class -->
-                   
+
                     <!-- BEGIN Section -->
                     <li>
                         <a href="">
@@ -353,13 +353,13 @@
                     </li>
                     <!--end /menu-li -->
                     <!-- END section -->
-                 
+
 
 
                     <!--end /menu-li -->
                     <!-- END MArks -->
 
-               
+
                     <!-- BEGIN Board -->
                     <li>
                         <a href="">
@@ -369,7 +369,7 @@
                     </li>
                     <!--end /menu-li -->
                     <!-- END Board -->
-                 
+
 
  <!-- BEGIN ContactUs -->
                     <li>
@@ -383,14 +383,14 @@
                     <!-- END ContactUs -->
 
 
-                    
+
                     <li>
                         <a href="">
                             <div class="gui-icon"><i class="md md-settings-backup-restore"></i></div>
                             <span class="title">{{ trans('dashboard.Go to back page') }}</span>
                         </a>
                     </li>
-                 
+
 
                 </ul>
                 <!--end .main-menu -->
@@ -408,9 +408,9 @@
         <!-- END MENUBAR -->
 
 <section id="content">
-             
+
                     @yield('content')
-              
+
 </section>
         </section>
         <!--end #base-->
@@ -419,27 +419,27 @@
 		<!-- BEGIN JAVASCRIPT -->
 
 		<script src="{{URL::to('assets')}}/sidebar/jquery-1.11.2.min.js"></script>
-		
-		
-	
-       
-		
-		<!-- Put App.js last in your javascript imports -->
-		
 
-       
+
+
+
+
+		<!-- Put App.js last in your javascript imports -->
+
+
+
         @yield('page_footer')
         <script src="{{URL::to('assets')}}/sidebar/App.min.js"></script>
          <!-- Javascript Libraries -->
-       
+
         <script src="{{URL::to('assets')}}/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+
         <script src="{{URL::to('assets')}}/vendors/bower_components/flot/jquery.flot.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/flot/jquery.flot.resize.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
         <script src="{{URL::to('assets')}}/vendors/sparklines/jquery.sparkline.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-        
+
         <script src="{{URL::to('assets')}}/vendors/bower_components/moment/min/moment.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
@@ -447,16 +447,16 @@
         <script src="{{URL::to('assets')}}/vendors/bootstrap-growl/bootstrap-growl.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
-        
+
         <!-- Placeholder for IE9 -->
         <!--[if IE 9 ]>
             <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
         <![endif]-->
-        
+
         <script src="{{URL::to('assets')}}/js/flot-charts/curved-line-chart.js"></script>
         <script src="{{URL::to('assets')}}/js/flot-charts/line-chart.js"></script>
         <script src="{{URL::to('assets')}}/js/charts.js"></script>
-        
+
         <script src="{{URL::to('assets')}}/js/charts.js"></script>
         <script src="{{URL::to('assets')}}/js/functions.js"></script>
         <script src="{{URL::to('assets')}}/js/demo.js"></script>
@@ -467,6 +467,6 @@
             });
         </script>
 
-        
+
 	</body>
 </html>

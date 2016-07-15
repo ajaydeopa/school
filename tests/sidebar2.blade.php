@@ -6,7 +6,7 @@
 
 
   <style>
-      
+
       *{
   box-sizing: border-box;
 }
@@ -33,7 +33,7 @@ h1{
   padding:0;
 }
 li{
-  height:50px; 
+  height:50px;
   position:relative;
   background: linear-gradient(#292929, #242424);
 }
@@ -72,24 +72,24 @@ span[class ^= "icon"]{
 }
 
 @media only screen and (max-width : 860px){
-  
+
   .text{
     display:none;
   }
-  
+
   .nav-container , a{
     width: 70px;
-    
+
   }
-   
+
   a:hover{
-    width:200px; 
+    width:200px;
     z-index:1;
     border-top: 1px solid rgba(255,255,255,0.1);
     border-bottom: 1px solid black;
     box-shadow: 0 0 1px 1px black;
   }
-  
+
   a:hover  .text {
     display:block;
     padding-left:30%;
@@ -101,14 +101,14 @@ span[class ^= "icon"]{
 }
 
     </style>
- 
+
 <script>
     $('li').click(function(){
-  
+
   $(this).addClass('active')
        .siblings()
        .removeClass('active');
-    
+
 });
 
 /*
@@ -121,7 +121,7 @@ You can use this when changing orientation on a tablet or smart phone for exampl
 Follow me on Twitter: http://twitter.com/SaraSoueidan
 
 */
-    
+
     </script>
 
 
@@ -152,7 +152,7 @@ Follow me on Twitter: http://twitter.com/SaraSoueidan
     <li>
       <a href="#">
         <span class="icon-picture"></span>
-        <span class="text">Portfolio</span>    
+        <span class="text">Portfolio</span>
       </a>
     </li>
     <li>
@@ -162,8 +162,8 @@ Follow me on Twitter: http://twitter.com/SaraSoueidan
     </li>
   </ul>
 </div>
-			
-  
-  
+
+
+
 </body>
 </html>

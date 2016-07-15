@@ -37,5 +37,5 @@ Route::get('sidebar4', function () {
     return view('sidebar4');
 });
 Route::get('tabs', function () {
-    return view('tabs');
+    return view('sidebar41');
 });

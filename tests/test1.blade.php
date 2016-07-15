@@ -1,4 +1,4 @@
-@extends('layout.app1') 
+@extends('layout.app1')
 <style>
 .nav-tab {
   border-bottom: 1px solid #ffffff;

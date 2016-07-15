@@ -1,12 +1,12 @@
-
-<html>
+!DOCTYPE html>
 <!--[if IE 9 ]><html class="ie9"><![endif]-->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>WebSchool</title>
-		 <!-- Vendor CSS -->
+
+        <!-- Vendor CSS -->
         <link href="{{URL::to('assets')}}/vendors/bower_components/animate.css/animate.min.css" rel="stylesheet">
 
     <link href="{{URL::to('assets')}}/vendors/bower_components/bootstrap-sweetalert/lib/sweet-alert.css" rel="stylesheet">
@@ -19,16 +19,23 @@
          <link href="{{URL::to('assets')}}/css/app.min.1.css" rel="stylesheet">
 
     <link href="{{URL::to('assets')}}/css/app.min.2.css" rel="stylesheet">
-        
 
-        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/materialadmin.css" />
-        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/font-awesome.min.css" /> 
-         <!--Font Awesome Icon Font
-       <!-- <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/theme-default/bootstrap.css" />
+
+	<!-- BEGIN Menubar STYLESHEETS-->
+         <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/side/materialadmin.css" />
+
+
        
-        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/sidebar/material-design-iconic-font.min.css" /> 
-		-->
-	<style>
+        <!--
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/side/bootstrap.css" />
+
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/side/font-awesome.min.css" />
+        <link type="text/css" rel="stylesheet" href="{{URL::to('assets')}}/side/material-design-iconic-font.min.css" />
+		<!-- side bar STYLESHEETS -->
+
+
+
+		<style>
         
         #position
         {
@@ -36,25 +43,26 @@
             padding: 11px;}
         
         </style>
+
+
+
+       @yield('page_head')
 	</head>
 
-	<body class="menubar-hoverable header-fixed ">
+	<body class="menubar-hoverable header-fixed menubar-pin">
         <!-- BEGIN HEADER-->
-		        
-         
- <!--Top Header-->
-        
-                <header id="header" data-current-skin="blue">
+
+			<!--Top Header-->
+
+                <header id="header" class="clearfix" data-current-skin="blue">
             <ul class="header-inner">
-                 
-                <li id="menu-trigger" data-trigger="#sidebar" data-toggle="menubar" href="javascript:void(0);">
-                     <a >
-                  <div class="line-wrap">
+
+                <li id="menu-trigger" data-trigger="#sidebar"  data-toggle="menubar" href="javascript:void(0);">
+                    <div class="line-wrap" >
                         <div class="line top"></div>
                         <div class="line center"></div>
                         <div class="line bottom"></div>
-                    </div> 
-                         </a>
+                    </div>
                 </li>
 
                 <li class="logo hidden-xs">
@@ -289,139 +297,145 @@
             </ul>
         </header>
     <!--End Top Header-->
-        <div id="base">
-        <section id="main" data-layout="layout-1">
-            
-   <!-- BEGIN MENUBAR-->
         
+
+
+
+
+    <!-- END HEADER-->
+
+    <!-- BEGIN BASE-->
+          <section id="main" data-layout="layout-1">
+    <div id="base">
+
+         <!-- BEGIN OFFCANVAS LEFT -->
+        <div class="offcanvas">
+        </div>
+        <!--end .offcanvas-->
+        <!-- END OFFCANVAS LEFT -->
+<section id="content">
+                <div class="container">
+                    @yield('content')
+                </div>
+            </section>
+
+        <!-- BEGIN MENUBAR-->
         <div id="menubar" class="menubar-inverse ">
-           
+            <div class="menubar-fixed-panel">
+                <div>
+                    <a class="btn btn-icon-toggle btn-default menubar-toggle" data-toggle="menubar" href="javascript:void(0);">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+                <div class="expanded">
+                    <a href="">
+                        <span class="text-lg text-bold text-primary ">WebSchool</span>
+                    </a>
+                </div>
+            </div>
             <div class="menubar-scroll-panel">
- <div class="c-overflow" style="height:600px;">
+
                 <!-- BEGIN MAIN MENU -->
                 <ul id="main-menu" class="gui-controls">
 
                     <!-- BEGIN DASHBOARD -->
-                    <li class="active" id="1">
-                        <a href="" >
-                            <div class="gui-icon" ><i class="zmdi zmdi-tab zmdi-hc-fw" id="position"></i></div>
-                            <span class="title">Dashboard</span>
+                    <li>
+                        <a href="" class="active">
+                            <div class="gui-icon"><i class="zmdi zmdi-tab zmdi-hc-fw" id="position"></i></div>
+                            <span class="title">{{ trans('dashboard.Dashboard') }}</span>
                         </a>
                     </li>
                     <!--end /menu-li -->
                     <!-- END DASHBOARD -->
                    
                     <!-- BEGIN Teachers -->
-                    <li id="2">
+                    <li>
                         <a href="">
-                            <div class="gui-icon" ><i class="zmdi zmdi-tab zmdi-hc-fw" id="position"></i></div>
-                            
-                            <span class="title">Other</span>
+                            <div class="gui-icon"><i class="md md-account-box" id="position"></i></div>
+                            <span class="title">{{ trans('dashboard.Teachers') }}</span>
                         </a>
                     </li>
                     <!--end /menu-li -->
                     <!-- END Teachers -->
 
 
+                    <!-- BEGIN Students -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-school"></i></div>
+                            <span class="title">{{ trans('dashboard.Students') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Students -->
 
+
+
+                    <!-- BEGIN Parents -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-person"></i></div>
+                            <span class="title">{{ trans('dashboard.Parents') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Parents -->
+
+
+                    <!-- BEGIN Users -->
+                    <li>
+                        <a href="">
+                            <div class="gui-icon"><i class="md md-people"></i></div>
+                            <span class="title">{{ trans('dashboard.Users') }}</span>
+                        </a>
+                    </li>
+                    <!--end /menu-li -->
+                    <!-- END Users -->
                  
 
 
-
-                   
-
-                    <li id="3">
-                        <a href="">
-                            <div class="gui-icon"><i class="md md-assignment"></i></div>
-                            <span class="title">{{ trans('admin.Pratice Paper') }}</span>
-                        </a>
-                    </li>
-
-                    <!-- BEGIN Class -->
-                    <li id="4">
-                        <a href="">
-                            <div class="gui-icon"><i class="md md-style"></i></div>
-                            <span class="title">{{ trans('dashboard.Class') }}</span>
-                        </a>
-                    </li>
-                    <!--end /menu-li -->
-                    <!-- END Class -->
-                   
-                    <!-- BEGIN Section -->
+                    <!-- BEGIN Subjects -->
                     <li>
                         <a href="">
-                            <div class="gui-icon"><i class="md md-view-module"></i></div>
-                            <span class="title">{{ trans('admin.Sections') }}</span>
+                            <div class="gui-icon"><i class="md md-filter-none"></i></div>
+                            <span class="title">{{ trans('dashboard.Subjects') }}</span>
                         </a>
                     </li>
                     <!--end /menu-li -->
-                    <!-- END section -->
-                 
+                    <!-- END Subjects-->
 
-
-                    <!--end /menu-li -->
-                    <!-- END MArks -->
-
-               
-                    <!-- BEGIN Board -->
+                    <!-- BEGIN Exam -->
                     <li>
                         <a href="">
-                            <div class="gui-icon"><i class="md md-check-box-outline-blank"></i></div>
-                            <span class="title">{{ trans('admin.Boards') }}</span>
+                            <div class="gui-icon"><i class="md md-poll"></i></div>
+                            <span class="title">{{ trans('dashboard.Exam') }}</span>
                         </a>
                     </li>
                     <!--end /menu-li -->
-                    <!-- END Board -->
-                 
+                    <!-- END Exam -->
 
- <!-- BEGIN ContactUs -->
-                    <li>
-                        <a href="">
-                            <div class="gui-icon"><i class="md md-quick-contacts-mail
-"></i></div>
-                            <span class="title">{{ trans('dashboard.Contact Us') }}</span>
-                        </a>
-                    </li>
-                    <!--end /menu-li -->
-                    <!-- END ContactUs -->
-
-
-                    
-                    <li>
-                        <a href="">
-                            <div class="gui-icon"><i class="md md-settings-backup-restore"></i></div>
-                            <span class="title">{{ trans('dashboard.Go to back page') }}</span>
-                        </a>
-                    </li>
-                 
 
                 </ul>
                 <!--end .main-menu -->
                 <!-- END MAIN MENU -->
 
                 <div class="menubar-foot-panel">
-                   
                 </div>
 
             </div>
             <!--end .menubar-scroll-panel-->
-            </div>
         </div>
         <!--end #menubar-->
         <!-- END MENUBAR -->
 
-<section id="content">
-             
-                    @yield('content')
-              
-</section>
-        </section>
-        <!--end #base-->
+
+        </div><!--end #base-->
 		<!-- END BASE -->
-</div>
+                 </section>
+
 		<!-- BEGIN JAVASCRIPT -->
 
-		<script src="{{URL::to('assets')}}/sidebar/jquery-1.11.2.min.js"></script>
+		<script src="{{URL::to('assets')}}/side/jquery-1.11.2.min.js"></script>
 		
 		
 	
@@ -432,9 +446,8 @@
 
        
         @yield('page_footer')
-        <script src="{{URL::to('assets')}}/sidebar/App.min.js"></script>
-         <!-- Javascript Libraries -->
-       
+        <script src="{{URL::to('assets')}}/side/App.min.js"></script>
+
         <script src="{{URL::to('assets')}}/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         
         <script src="{{URL::to('assets')}}/vendors/bower_components/flot/jquery.flot.js"></script>
@@ -463,13 +476,6 @@
         <script src="{{URL::to('assets')}}/js/charts.js"></script>
         <script src="{{URL::to('assets')}}/js/functions.js"></script>
         <script src="{{URL::to('assets')}}/js/demo.js"></script>
-        <script>
-            $('#main-menu').on('click', 'li', function(){
-                $('#main-menu > li').removeClass('active');
-                $(this).addClass('active');
-            });
-        </script>
 
-        
 	</body>
 </html>

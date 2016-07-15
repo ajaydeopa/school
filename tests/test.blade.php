@@ -1,11 +1,11 @@
-@extends('layout.app1') 
-	
+@extends('layout.app1')
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.0.2.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
   <script type="text/javascript" src="{{URL::to('assets')}}/tabs/ui.tabs.overflowResize.js"></script>
   <script type="text/javascript" src="{{URL::to('assets')}}/tabs/lib/ui.tabs.closable.js"></script>
   <script type="text/javascript" src="{{URL::to('assets')}}/tabs/lib/ui.tabs.addTab.js"></script>
-  
+
   <link rel="stylesheet" type="text/css" href="{{URL::to('assets')}}/tabs/ui.tabs.overflowResize.css">
   <link rel="stylesheet" type="text/css" href="{{URL::to('assets')}}/tabs/new.css">
   <script>

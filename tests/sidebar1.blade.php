@@ -13,7 +13,7 @@
 
 
   <style>
-      
+
       body
 {
   margin:0px;
@@ -31,12 +31,12 @@
 @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300);
 
 .logo{
-  
+
 }
 
 .settings {
-  
-  height:73px; 
+
+  height:73px;
   float:left;
   background:url( http://s3.postimg.org/bqfooag4z/startific.jpg);
   background-repeat:no-repeat;
@@ -72,7 +72,7 @@ overflow-y: scroll;
 overflow-x: hidden;
 }
 
-/* Scrollbar Style */ 
+/* Scrollbar Style */
 
 
 
@@ -93,14 +93,14 @@ border-radius: 10px;
 -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
 background-color: #BFBFBF;
 }
-/* Scrollbar End */ 
+/* Scrollbar End */
 
 
 
 
 .fa-lg {
 font-size: 1em;
-  
+
 }
 .fa {
 position: relative;
@@ -108,7 +108,7 @@ display: table-cell;
 width: 55px;
 height: 36px;
 text-align: center;
-top:12px; 
+top:12px;
 font-size:20px;
 
 }
@@ -147,7 +147,7 @@ margin:7px 0;
 position:relative;
 display:block;
 width:250px;
-  
+
 
 
 }
@@ -167,13 +167,13 @@ transition:all .14s linear;
 font-family: 'Strait', sans-serif;
 border-top:1px solid #f2f2f2;
 
-text-shadow: 1px 1px 1px  #fff;  
+text-shadow: 1px 1px 1px  #fff;
 }
 
 
 
 .main-menu .nav-icon {
-  
+
 position:relative;
 display:table-cell;
 width:55px;
@@ -185,7 +185,7 @@ font-size:18px;
 }
 
 .main-menu .nav-text  {
-   
+
 position:relative;
 display:table-cell;
 vertical-align:middle;
@@ -209,7 +209,7 @@ top: 15px;
 position:absolute;
 left:0;
 bottom:0;
-  
+
 }
 
 .no-touch .scrollable.hover {
@@ -220,27 +220,27 @@ overflow-y:hidden;
 .no-touch .scrollable.hover:hover {
 overflow-y:auto;
 overflow:visible;
-  
+
 }
 
 
 /* Logo Hover Property */
 
 
-.settings:hover, settings:focus {   
+.settings:hover, settings:focus {
   background:url( http://s17.postimg.org/74cl7s05b/logo_hover.jpg);
   -webkit-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 -moz-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 -o-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
-transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0; 
+transition: all 0.2s ease-in-out, width 0, height 0, top 0, left 0;
 }
 
-.settings:active, settings:focus {   
+.settings:active, settings:focus {
   background:url( http://s3.postimg.org/bqfooag4z/startific.jpg);
   -webkit-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
 -moz-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
 -o-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
-transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0; 
+transition: all 0.1s ease-in-out, width 0, height 0, top 0, left 0;
 }
 
 
@@ -258,7 +258,7 @@ nav {
 -ms-user-select:none;
 -o-user-select:none;
 user-select:none;
-  
+
 }
 
 nav ul,nav li {
@@ -277,13 +277,13 @@ text-transform: uppercase;
 .darkerli
 {
 background-color:#ededed;
-text-transform:capitalize;  
+text-transform:capitalize;
 }
 
 .darkerlishadow
 {
 background-color:#ededed;
-text-transform:capitalize;  
+text-transform:capitalize;
 -webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
 -moz-box-shadow:    inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
 box-shadow:         inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
@@ -293,7 +293,7 @@ box-shadow:         inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
 .darkerlishadowdown
 {
 background-color:#ededed;
-text-transform:capitalize;  
+text-transform:capitalize;
 -webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
 -moz-box-shadow:    inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
 box-shadow:         inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
@@ -307,7 +307,7 @@ box-shadow:         inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
 .main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
 color:#fff;
 background-color:#00bbbb;
-text-shadow: 0px 0px 0px; 
+text-shadow: 0px 0px 0px;
 }
 .area {
 float: left;
@@ -323,7 +323,7 @@ height: 100%;
 }
 
     </style>
- 
+
 
 
 
@@ -335,93 +335,93 @@ height: 100%;
 </div><nav class="main-menu">
 
 
-  
+
  <div>
     <a class="logo" href="http://startific.com">
-    </a> 
-  </div> 
+    </a>
+  </div>
 <div class="settings"></div>
 <div class="scrollbar" id="style-1">
-      
+
 <ul>
-  
-<li>                                   
+
+<li>
 <a href="http://startific.com">
 <i class="fa fa-home fa-lg"></i>
 <span class="nav-text">Home</span>
 </a>
-</li>   
-   
-<li>                                 
+</li>
+
+<li>
 <a href="http://startific.com">
 <i class="fa fa-user fa-lg"></i>
 <span class="nav-text">Login</span>
 </a>
-</li>   
+</li>
 
-    
-<li>                                 
+
+<li>
 <a href="http://startific.com">
 <i class="fa fa-envelope-o fa-lg"></i>
 <span class="nav-text">Contact</span>
 </a>
-</li>   
-  
+</li>
 
 
- 
+
+
 <li>
 <a href="http://startific.com">
 <i class="fa fa-heart-o fa-lg"></i>
-                        
-<span class="share"> 
+
+<span class="share">
 
 
 <div class="addthis_default_style addthis_32x32_style">
-  
-<div style="position:absolute;
-margin-left: 56px;top:3px;"> 
-   
-  
 
-  
+<div style="position:absolute;
+margin-left: 56px;top:3px;">
+
+
+
+
  <a href="http://www.facebook.com/sharer/sharer.php?u=" target="_blank" class="share-popup"><img src="http://icons.iconarchive.com/icons/danleech/simple/512/facebook-icon.png" width="30px" height="30px"></a>
 
    <a href="http://twitter.com/share" target="_blank" class="share-popup"><img src="https://cdn1.iconfinder.com/data/icons/metro-ui-dock-icon-set--icons-by-dakirby/512/Twitter_alt.png" width="30px" height="30px"></a>
 
-   
+
 
 
 <a href="https://plusone.google.com/_/+1/confirm?hl=en&url=_URL_&title=_TITLE_
-" target="_blank" class="share-popup"><img src="http://icons.iconarchive.com/icons/danleech/simple/512/google-plus-icon.png" width="30px" height="30px"></a>   
-  
-  
-  
+" target="_blank" class="share-popup"><img src="http://icons.iconarchive.com/icons/danleech/simple/512/google-plus-icon.png" width="30px" height="30px"></a>
+
+
+
 </div>
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ff17589278d8b3a"></script>
-                       
-                            
-                              
-                            
-                          
+
+
+
+
+
                         </span>
                         <span class="twitter"></span>
                         <span class="google"></span>
-                        <span class="fb-like">  
+                        <span class="fb-like">
 <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fstartific&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe>
-                       
+
                         </span>
                         <span class="nav-text">
                         </span>
-                        
+
                     </a>
 
 </li>
-                            
 
-  
-  
+
+
+
 </li>
 <li class="darkerlishadow">
 <a href="http://startific.com">
@@ -429,28 +429,28 @@ margin-left: 56px;top:3px;">
 <span class="nav-text">News</span>
 </a>
 </li>
-  
+
 <li class="darkerli">
 <a href="http://startific.com">
 <i class="fa fa-desktop fa-lg"></i>
 <span class="nav-text">Technology</span>
 </a>
 </li>
-  
+
 <li class="darkerli">
 <a href="http://startific.com">
 <i class="fa fa-plane fa-lg"></i>
 <span class="nav-text">Travel</span>
 </a>
 </li>
-  
+
 <li class="darkerli">
 <a href="http://startific.com">
 <i class="fa fa-shopping-cart"></i>
  <span class="nav-text">Shopping</span>
 </a>
 </li>
-  
+
 <li class="darkerli">
 <a href="http://startific.com">
 <i class="fa fa-microphone fa-lg"></i>
@@ -464,7 +464,7 @@ margin-left: 56px;top:3px;">
 <span class="nav-text">Web Tools</span>
 </a>
 </li>
-  
+
 <li class="darkerli">
 <a href="http://startific.com">
 <i class="fa fa-picture-o fa-lg"></i>
@@ -479,14 +479,14 @@ margin-left: 56px;top:3px;">
 </span>
 </a>
 </li>
-  
+
 <li class="darkerli">
 <a href="http://startific.com">
 <i class="fa fa-gamepad fa-lg"></i>
 <span class="nav-text">Games</span>
 </a>
 </li>
-  
+
 <li class="darkerli">
 <a href="http://startific.com">
 <i class="fa fa-glass fa-lg"></i>
@@ -494,44 +494,44 @@ margin-left: 56px;top:3px;">
 </span>
 </a>
 </li>
-  
+
 <li class="darkerlishadowdown">
 <a href="http://startific.com">
 <i class="fa fa-rocket fa-lg"></i>
 <span class="nav-text">Fun</span>
 </a>
 </li>
- 
-  
+
+
 </ul>
 
-  
+
 <li>
-                                   
+
 <a href="http://startific.com">
 <i class="fa fa-question-circle fa-lg"></i>
 <span class="nav-text">Help</span>
 </a>
-</li>   
-    
-  
+</li>
+
+
 <ul class="logout">
 <li>
                    <a href="http://startific.com">
                          <i class="fa fa-lightbulb-o fa-lg"></i>
                         <span class="nav-text">
-                            BLOG 
+                            BLOG
                         </span>
-                        
+
                     </a>
-</li>  
+</li>
 </ul>
         </nav>
-        
-  
 
-			
-  
-  
+
+
+
+
+
 </body>
 </html>
