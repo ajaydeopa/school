@@ -539,11 +539,11 @@
   }
 }
 html,
-body,
+body1,
 .full-height {
   height: 100%;
 }
-body {
+body1 {
   background: #e5e6e6;
   background-size: 100% 100%;
   color: #313534;
@@ -1529,7 +1529,7 @@ a.text-success:hover {
   -o-transition: width 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01);
   transition: width 0.5s cubic-bezier(0.15, 0.99, 0.18, 1.01);
 }
-body:not(.header-fixed) #menubar,
+body1:not(.header-fixed) #menubar,
 .menubar-first #menubar {
   top: 0;
 }
@@ -1562,7 +1562,7 @@ body:not(.header-fixed) #menubar,
 .menubar-pin .menubar-fixed-panel .expanded {
   display: table-cell;
 }
-body:not(.menubar-first) .menubar-fixed-panel {
+body1:not(.menubar-first) .menubar-fixed-panel {
   display: none;
 }
 #menubar.menubar-inverse {
@@ -2199,13 +2199,13 @@ section:first-child {
 section.full-bleed {
   padding: 0 !important;
 }
-.section-body:first-child {
+.section-body1:first-child {
   margin-top: 24px;
 }
-.full-bleed .section-body:first-child {
+.full-bleed .section-body1:first-child {
   margin-top: 0;
 }
-.section-body.full-bleed {
+.section-body1.full-bleed {
   margin: 0 -24px;
 }
 .section-header {
@@ -2321,7 +2321,7 @@ section.section-account .img-circle {
     -o-animation: backdrop-animation 0.8s ease-out 1s ease-in;
     animation: backdrop-animation 0.8s ease-out 1s ease-in;
   }
-  section.section-account .card-body {
+  section.section-account .card-body1 {
     -webkit-animation: box-animation 1s ease-out;
     -o-animation: box-animation 1s ease-out;
     animation: box-animation 1s ease-out;
@@ -2352,7 +2352,7 @@ section.section-account .img-circle {
     -o-animation: backdrop-animation 0.8s ease-out 1s ease-in;
     animation: backdrop-animation 0.8s ease-out 1s ease-in;
   }
-  section.section-account .card-body {
+  section.section-account .card-body1 {
     -webkit-animation: box-animation 1s ease-out;
     -o-animation: box-animation 1s ease-out;
     animation: box-animation 1s ease-out;
@@ -2429,10 +2429,10 @@ section.section-account .img-circle {
   }
 }
 .table > thead > tr > th,
-.table > tbody > tr > th,
+.table > tbody1 > tr > th,
 .table > tfoot > tr > th,
 .table > thead > tr > td,
-.table > tbody > tr > td,
+.table > tbody1 > tr > td,
 .table > tfoot > tr > td {
   vertical-align: baseline;
 }
@@ -2447,37 +2447,37 @@ section.section-account .img-circle {
   border-color: rgba(163, 168, 168, 0.2);
 }
 .table-bordered > thead > tr > th,
-.table-bordered > tbody > tr > th,
+.table-bordered > tbody1 > tr > th,
 .table-bordered > tfoot > tr > th,
 .table-bordered > thead > tr > td,
-.table-bordered > tbody > tr > td,
+.table-bordered > tbody1 > tr > td,
 .table-bordered > tfoot > tr > td {
   border-color: rgba(163, 168, 168, 0.2);
 }
-.table-striped > tbody > tr:nth-child(odd) > td,
-.table-striped > tbody > tr:nth-child(odd) > th {
+.table-striped > tbody1 > tr:nth-child(odd) > td,
+.table-striped > tbody1 > tr:nth-child(odd) > th {
   background-color: rgba(242, 243, 243, 0.35);
 }
-.table-banded > tbody > tr > td:nth-child(odd),
-.table-banded > tbody > tr > th:nth-child(odd) {
+.table-banded > tbody1 > tr > td:nth-child(odd),
+.table-banded > tbody1 > tr > th:nth-child(odd) {
   background-color: rgba(242, 243, 243, 0.35);
 }
 .table-no-border {
   border-color: transparent;
 }
 .table-no-border > thead > tr > th,
-.table-no-border > tbody > tr > th,
+.table-no-border > tbody1 > tr > th,
 .table-no-border > tfoot > tr > th,
 .table-no-border > thead > tr > td,
-.table-no-border > tbody > tr > td,
+.table-no-border > tbody1 > tr > td,
 .table-no-border > tfoot > tr > td {
   border-color: transparent;
 }
-.table-condensed > tbody > tr > td {
+.table-condensed > tbody1 > tr > td {
   vertical-align: middle;
 }
-.table-hover > tbody > tr:hover > td,
-.table-hover > tbody > tr:hover > th {
+.table-hover > tbody1 > tr:hover > td,
+.table-hover > tbody1 > tr:hover > th {
   background-color: rgba(229, 230, 230, 0.25);
 }
 .input-group-lg > .input-group-content > .form-control,
@@ -4570,7 +4570,7 @@ fieldset[disabled] .btn-icon-toggle {
   margin-right: 0;
   margin-left: 6px;
 }
-body [class*=" md-"],
+body1 [class*=" md-"],
 [class^=md-] {
   font-size: 1.2em;
   margin-top: -0.2em;
@@ -5081,22 +5081,22 @@ li.dropdown-progress .progress {
 .card-head.card-head-lg header {
   font-size: 24px;
 }
-.card-body {
+.card-body1 {
   padding: 24px;
   position: relative;
 }
-.card-body:before,
-.card-body:after {
+.card-body1:before,
+.card-body1:after {
   content: " ";
   display: table;
 }
-.card-body:after {
+.card-body1:after {
   clear: both;
 }
-.card-body:last-child {
+.card-body1:last-child {
   border-radius: 0 0 2px 2px;
 }
-.card-body.table-responsive {
+.card-body1.table-responsive {
   margin: 0;
 }
 .card-actionbar {
@@ -5160,8 +5160,8 @@ section.style-default-dark .btn-flat:hover,
 .card.style-default-dark .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-default-dark,
-.card-body-darken.style-default-dark {
+.card-body1-darken .style-default-dark,
+.card-body1-darken.style-default-dark {
   background-color: #1c2025;
   border-color: #1c2025;
   color: #ffffff;
@@ -5195,8 +5195,8 @@ section.style-default .btn-flat:hover,
 .card.style-default .btn-flat:hover {
   background-color: rgba(49, 53, 52, 0.3);
 }
-.card-body-darken .style-default,
-.card-body-darken.style-default {
+.card-body1-darken .style-default,
+.card-body1-darken.style-default {
   background-color: #dfe1e1;
   border-color: #dfe1e1;
   color: #313534;
@@ -5230,8 +5230,8 @@ section.style-default-light .btn-flat:hover,
 .card.style-default-light .btn-flat:hover {
   background-color: rgba(49, 53, 52, 0.3);
 }
-.card-body-darken .style-default-light,
-.card-body-darken.style-default-light {
+.card-body1-darken .style-default-light,
+.card-body1-darken.style-default-light {
   background-color: #edeeee;
   border-color: #edeeee;
   color: #313534;
@@ -5265,8 +5265,8 @@ section.style-default-bright .btn-flat:hover,
 .card.style-default-bright .btn-flat:hover {
   background-color: rgba(49, 53, 52, 0.3);
 }
-.card-body-darken .style-default-bright,
-.card-body-darken.style-default-bright {
+.card-body1-darken .style-default-bright,
+.card-body1-darken.style-default-bright {
   background-color: #fafafa;
   border-color: #fafafa;
   color: #313534;
@@ -5300,8 +5300,8 @@ section.style-gray-dark .btn-flat:hover,
 .card.style-gray-dark .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-gray-dark,
-.card-body-darken.style-gray-dark {
+.card-body1-darken .style-gray-dark,
+.card-body1-darken.style-gray-dark {
   background-color: #2d2f2f;
   border-color: #2d2f2f;
   color: #ffffff;
@@ -5335,8 +5335,8 @@ section.style-gray .btn-flat:hover,
 .card.style-gray .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-gray,
-.card-body-darken.style-gray {
+.card-body1-darken .style-gray,
+.card-body1-darken.style-gray {
   background-color: #4e5352;
   border-color: #4e5352;
   color: #ffffff;
@@ -5370,8 +5370,8 @@ section.style-gray-light .btn-flat:hover,
 .card.style-gray-light .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-gray-light,
-.card-body-darken.style-gray-light {
+.card-body1-darken .style-gray-light,
+.card-body1-darken.style-gray-light {
   background-color: #919797;
   border-color: #919797;
   color: #ffffff;
@@ -5405,8 +5405,8 @@ section.style-gray-bright .btn-flat:hover,
 .card.style-gray-bright .btn-flat:hover {
   background-color: rgba(49, 53, 52, 0.3);
 }
-.card-body-darken .style-gray-bright,
-.card-body-darken.style-gray-bright {
+.card-body1-darken .style-gray-bright,
+.card-body1-darken.style-gray-bright {
   background-color: #b8bcbc;
   border-color: #b8bcbc;
   color: #313534;
@@ -5440,8 +5440,8 @@ section.style-primary .btn-flat:hover,
 .card.style-primary .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-primary,
-.card-body-darken.style-primary {
+.card-body1-darken .style-primary,
+.card-body1-darken.style-primary {
   background-color: #099e95;
   border-color: #099e95;
   color: #ffffff;
@@ -5475,8 +5475,8 @@ section.style-primary-light .btn-flat:hover,
 .card.style-primary-light .btn-flat:hover {
   background-color: rgba(49, 53, 52, 0.3);
 }
-.card-body-darken .style-primary-light,
-.card-body-darken.style-primary-light {
+.card-body1-darken .style-primary-light,
+.card-body1-darken.style-primary-light {
   background-color: #76d6cf;
   border-color: #76d6cf;
   color: #313534;
@@ -5510,8 +5510,8 @@ section.style-primary-dark .btn-flat:hover,
 .card.style-primary-dark .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-primary-dark,
-.card-body-darken.style-primary-dark {
+.card-body1-darken .style-primary-dark,
+.card-body1-darken.style-primary-dark {
   background-color: #05585b;
   border-color: #05585b;
   color: #ffffff;
@@ -5545,8 +5545,8 @@ section.style-primary-bright .btn-flat:hover,
 .card.style-primary-bright .btn-flat:hover {
   background-color: rgba(49, 53, 52, 0.3);
 }
-.card-body-darken .style-primary-bright,
-.card-body-darken.style-primary-bright {
+.card-body1-darken .style-primary-bright,
+.card-body1-darken.style-primary-bright {
   background-color: #c2eeeb;
   border-color: #c2eeeb;
   color: #313534;
@@ -5580,8 +5580,8 @@ section.style-accent .btn-flat:hover,
 .card.style-accent .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-accent,
-.card-body-darken.style-accent {
+.card-body1-darken .style-accent,
+.card-body1-darken.style-accent {
   background-color: #9525a8;
   border-color: #9525a8;
   color: #ffffff;
@@ -5615,8 +5615,8 @@ section.style-accent-light .btn-flat:hover,
 .card.style-accent-light .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-accent-light,
-.card-body-darken.style-accent-light {
+.card-body1-darken .style-accent-light,
+.card-body1-darken.style-accent-light {
   background-color: #c474d2;
   border-color: #c474d2;
   color: #ffffff;
@@ -5650,8 +5650,8 @@ section.style-accent-dark .btn-flat:hover,
 .card.style-accent-dark .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-accent-dark,
-.card-body-darken.style-accent-dark {
+.card-body1-darken .style-accent-dark,
+.card-body1-darken.style-accent-dark {
   background-color: #611877;
   border-color: #611877;
   color: #ffffff;
@@ -5685,8 +5685,8 @@ section.style-accent-bright .btn-flat:hover,
 .card.style-accent-bright .btn-flat:hover {
   background-color: rgba(49, 53, 52, 0.3);
 }
-.card-body-darken .style-accent-bright,
-.card-body-darken.style-accent-bright {
+.card-body1-darken .style-accent-bright,
+.card-body1-darken.style-accent-bright {
   background-color: #e6c1ec;
   border-color: #e6c1ec;
   color: #313534;
@@ -5720,8 +5720,8 @@ section.style-success .btn-flat:hover,
 .card.style-success .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-success,
-.card-body-darken.style-success {
+.card-body1-darken .style-success,
+.card-body1-darken.style-success {
   background-color: #49a84d;
   border-color: #49a84d;
   color: #ffffff;
@@ -5755,8 +5755,8 @@ section.style-warning .btn-flat:hover,
 .card.style-warning .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-warning,
-.card-body-darken.style-warning {
+.card-body1-darken .style-warning,
+.card-body1-darken.style-warning {
   background-color: #f59200;
   border-color: #f59200;
   color: #ffffff;
@@ -5790,8 +5790,8 @@ section.style-danger .btn-flat:hover,
 .card.style-danger .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-danger,
-.card-body-darken.style-danger {
+.card-body1-darken .style-danger,
+.card-body1-darken.style-danger {
   background-color: #f33a2c;
   border-color: #f33a2c;
   color: #ffffff;
@@ -5825,8 +5825,8 @@ section.style-info .btn-flat:hover,
 .card.style-info .btn-flat:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
-.card-body-darken .style-info,
-.card-body-darken.style-info {
+.card-body1-darken .style-info,
+.card-body1-darken.style-info {
   background-color: #1791f2;
   border-color: #1791f2;
   color: #ffffff;
@@ -5864,7 +5864,7 @@ section.style-info .btn-flat:hover,
   padding-left: 4px;
   padding-right: 4px;
 }
-.card-transparent .card-body {
+.card-transparent .card-body1 {
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
 }
@@ -5971,7 +5971,7 @@ section.style-info .btn-flat:hover,
   .card-head.card-head-xs header {
     padding: 8px 16px;
   }
-  .card-body {
+  .card-body1 {
     padding: 16px;
   }
   .card .force-padding {
@@ -5994,7 +5994,7 @@ section.style-info .btn-flat:hover,
   right: 0;
   z-index: 1032;
 }
-body.offcanvas-expanded {
+body1.offcanvas-expanded {
   overflow: hidden;
 }
 .offcanvas:first-child {
@@ -6027,7 +6027,7 @@ body.offcanvas-expanded {
 .offcanvas:first-child .offcanvas-pane {
   right: 0;
 }
-.offcanvas-body {
+.offcanvas-body1 {
   padding: 16px;
 }
 .offcanvas-head {
@@ -6409,7 +6409,7 @@ sub.badge {
 .list-group-item.focus:focus .list-group-item-text {
   opacity: .75;
 }
-.card-body .list-group:first-child:nth-last-child(1) {
+.card-body1 .list-group:first-child:nth-last-child(1) {
   margin-bottom: 0;
 }
 .list-email {
@@ -6487,7 +6487,7 @@ sub.badge {
   line-height: 52px;
   font-size: 20px;
 }
-.list-comments .card-body {
+.list-comments .card-body1 {
   margin-left: 80px;
 }
 .list-chats {
@@ -6530,7 +6530,7 @@ sub.badge {
   line-height: 32px;
   font-size: 16px;
 }
-.list-chats .chat-body {
+.list-chats .chat-body1 {
   position: relative;
   display: inline-block;
   float: right;
@@ -6541,12 +6541,12 @@ sub.badge {
   color: #313534;
   background: #ffffff;
 }
-.list-chats .chat-body small {
+.list-chats .chat-body1 small {
   display: block;
   margin-bottom: -4px;
   opacity: 0.7;
 }
-.list-chats .chat-avatar + .chat-body:after {
+.list-chats .chat-avatar + .chat-body1:after {
   position: absolute;
   content: '';
   z-index: 0;
@@ -6565,12 +6565,12 @@ sub.badge {
   left: 0;
   right: auto;
 }
-.list-chats .chat-left .chat-body {
+.list-chats .chat-left .chat-body1 {
   float: left;
   background-color: #0aa89e;
   color: #ffffff;
 }
-.list-chats .chat-left .chat-avatar + .chat-body:after {
+.list-chats .chat-left .chat-avatar + .chat-body1:after {
   top: 0;
   left: -12px;
   border-width: 0 12px 12px 0;

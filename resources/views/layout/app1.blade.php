@@ -329,7 +329,7 @@
                 </div>
                 <div class="expanded">
                     <a href="">
-                        <span class="text-lg text-bold text-primary ">WebSchool</span>
+                        <span class="text-lg text-bold text-primary ">Profile</span>
                     </a>
                 </div>
             </div>
