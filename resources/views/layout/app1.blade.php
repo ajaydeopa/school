@@ -305,19 +305,10 @@
     <!-- END HEADER-->
 
     <!-- BEGIN BASE-->
-          <section id="main" data-layout="layout-1">
+
     <div id="base">
 
-         <!-- BEGIN OFFCANVAS LEFT -->
-        <div class="offcanvas">
-        </div>
-        <!--end .offcanvas-->
-        <!-- END OFFCANVAS LEFT -->
-<section id="content">
-                <div class="container">
-                    @yield('content')
-                </div>
-            </section>
+
 
         <!-- BEGIN MENUBAR-->
         <div id="menubar" class="menubar-inverse ">
@@ -428,10 +419,20 @@
         <!--end #menubar-->
         <!-- END MENUBAR -->
 
+  <!-- BEGIN OFFCANVAS LEFT -->
+        <div class="offcanvas">
+        </div>
+        <!--end .offcanvas-->
+        <!-- END OFFCANVAS LEFT -->
 
+<section id="content" style="min-height: 100vh;">
+                <div class="container">
+                    @yield('content')
+                </div>
+            </section>
         </div><!--end #base-->
 		<!-- END BASE -->
-                 </section>
+
 
 		<!-- BEGIN JAVASCRIPT -->
 
