@@ -4,11 +4,11 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class UserDetail extends Model
+class CollegeDetail extends Model
 {
     //
     protected $fillable = [
-        'user_id', 'first_name', 'middle_name', 'last_name', 'profile_pic', 'college_detail_id'
+        'collegeid', 'college_name', 'logo',
     ];
 
     public $timestamps = false;

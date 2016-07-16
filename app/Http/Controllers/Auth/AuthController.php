@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\UserDetail;
+use App\CollegeDetail;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
@@ -49,8 +51,14 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'name' => 'required|max:255',
-            'email' => 'required|email|max:255|unique:users',
+            'first_name' => 'required|alpha|max:20',
+            'middle_name' => 'required|alpha|max:20',
+            'last_name' => 'required|alpha|max:20',
+            'college_name' => 'required|max:20',
+            'collegeid' => 'required|max:20',
+            'email' => 'required|email|max:40|unique:users',
+            'profile_pic' => 'required',
+            'logo' => 'required',
             'password' => 'required|min:6|confirmed',
         ]);
     }
@@ -63,10 +71,34 @@ class AuthController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
+        /*return User::create([
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'collegeid' => $data['collegeid'],
+            'user_type' => 1,
+        ]);*/
+        $user = User::create([
+                    'email' => $data['email'],
+                    'password' => bcrypt($data['password']),
+                    'collegeid' => $data['collegeid'],
+                    'user_type' => 1,
+                ]);
+
+        $college = CollegeDetail::create([
+                        'collegeid' => $data['collegeid'],
+                        'college_name' => $data['college_name'],
+                        'logo' => $data['logo'],
+                    ]);
+
+        UserDetail::create([
+            'user_id' => $user->id,
+            'first_name' => $data['first_name'],
+            'middle_name' => $data['middle_name'],
+            'last_name' => $data['last_name'],
+            'profile_pic' => $data['profile_pic'],
+            'college_detail_id' => $college->id,
         ]);
+
+        return $user;
     }
 }

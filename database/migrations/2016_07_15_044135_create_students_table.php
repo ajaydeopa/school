@@ -15,13 +15,16 @@ class CreateStudentsTable extends Migration
         Schema::create('students', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned();
-            $table->integer('joining_class');
+            $table->integer('joining_class_id')->unsigned();
+            $table->integer('joining_class_section_id')->unsigned();
             $table->integer('class_id')->unsigned(); //current class
             $table->integer('class_section_id')->unsigned(); //current class section
 
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('class_id')->references('id')->on('classes')->onDelete('cascade');
             $table->foreign('class_section_id')->references('id')->on('class_sections')->onDelete('cascade');
+            $table->foreign('joining_class_id')->references('id')->on('classes')->onDelete('cascade');
+            $table->foreign('joining_class_section_id')->references('id')->on('class_sections')->onDelete('cascade');
         });
     }
 

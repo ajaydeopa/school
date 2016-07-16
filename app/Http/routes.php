@@ -27,7 +27,9 @@ Route::group(['middlewareGroups' => ['web']], function(){
 	    });
 
     	//write all routes here
-
+        Route::get('registration', function(){
+            return view('pages.register');
+        });
 
     });
 });
