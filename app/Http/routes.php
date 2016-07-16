@@ -33,3 +33,31 @@ Route::group(['middlewareGroups' => ['web']], function(){
 
     });
 });
+/*Route::get('/', function () {
+    return view('index');
+});*/
+Route::get('login', function () {
+    return view('login');
+});
+Route::get('calander', function () {
+    return view('calander');
+});
+Route::get('welcome', function () {
+    return view('welcome');
+});
+
+Route::get('table', function () {
+    return view('table');
+});
+Route::get('card', function () {
+    return view('card');
+});
+Route::get('card1', function () {
+    return view('carddemo');
+});
+Route::get('sidebar4', function () {
+    return view('sidebar4');
+});
+Route::get('tabs', function () {
+    return view('sidebar41');
+});
