@@ -12,26 +12,26 @@
 */
 
 Route::get('/', function () {
+    return view('index');
+});
+Route::get('login', function () {
+    return view('login');
+});
+Route::get('calander', function () {
+    return view('calander');
+});
+Route::get('welcome', function () {
     return view('welcome');
 });
-Route::get('test', function () {
-    return view('test');
-});
-Route::get('test1', function () {
-    return view('test1');
-});
-Route::get('test2', function () {
-    return view('test2');
-});
 
-Route::get('sidebar1', function () {
-    return view('sidebar1');
+Route::get('table', function () {
+    return view('table');
 });
-Route::get('sidebar2', function () {
-    return view('sidebar2');
+Route::get('card', function () {
+    return view('card');
 });
-Route::get('sidebar3', function () {
-    return view('sidebar3');
+Route::get('card1', function () {
+    return view('carddemo');
 });
 Route::get('sidebar4', function () {
     return view('sidebar4');

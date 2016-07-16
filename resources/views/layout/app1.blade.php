@@ -423,13 +423,14 @@
         <div class="offcanvas">
         </div>
         <!--end .offcanvas-->
-        <!-- END OFFCANVAS LEFT -->
+        <!-- END OFFCANVAS LEFT
 
 <section id="content" style="min-height: 100vh;">
-                <div class="container">
-                    @yield('content')
-                </div>
-            </section>
+               -->
+           <div id="content">
+            @yield('content')
+        </div>
+
         </div><!--end #base-->
 		<!-- END BASE -->
 

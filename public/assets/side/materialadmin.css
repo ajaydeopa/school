@@ -2420,6 +2420,7 @@ section.section-account .img-circle {
 @media (max-width: 768px) {
   section {
     padding: 12px;
+          padding-left: 70px;
   }
   .full-content section.has-actions {
     padding-bottom: 64px;
