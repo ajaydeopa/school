@@ -51,13 +51,13 @@ class AuthController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'first_name' => 'required|alpha|max:20',
+            /*'first_name' => 'required|alpha|max:20',
             'middle_name' => 'required|alpha|max:20',
-            'last_name' => 'required|alpha|max:20',
+            'last_name' => 'required|alpha|max:20',*/
             'college_name' => 'required|max:20',
             'collegeid' => 'required|max:20',
             'email' => 'required|email|max:40|unique:users',
-            'profile_pic' => 'required',
+            //'profile_pic' => 'required',
             'logo' => 'required',
             'password' => 'required|min:6|confirmed',
         ]);
@@ -92,10 +92,10 @@ class AuthController extends Controller
 
         UserDetail::create([
             'user_id' => $user->id,
-            'first_name' => $data['first_name'],
-            'middle_name' => $data['middle_name'],
-            'last_name' => $data['last_name'],
-            'profile_pic' => $data['profile_pic'],
+            //'first_name' => $data['first_name'],
+            //'middle_name' => $data['middle_name'],
+            //'last_name' => $data['last_name'],
+            //'profile_pic' => $data['profile_pic'],
             'college_detail_id' => $college->id,
         ]);
 
