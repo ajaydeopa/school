@@ -427,7 +427,7 @@
 
 <section id="content" style="min-height: 100vh;">
                -->
-           <div id="content">
+           <div id="content" style="min-height: 100vh;">
             @yield('content')
         </div>
 
