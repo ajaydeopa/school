@@ -8,6 +8,7 @@
 		    	<span class="c-white f-18">Add New Item</span><span class="c-white f-12 pull-right">Fill Details</span>
         	</div><br>
 			<div class="card-body card-padding">
+
             {{ Form::open() }}
 		    	@include('partials.form')
 		    {{ Form::close() }}

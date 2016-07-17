@@ -2191,7 +2191,7 @@ section {
   padding: 24px;
 }
 section:first-child {
-  padding-top: 0;
+  padding-top: 35px;
 }
 .row section {
   margin-bottom: 0;
@@ -2481,7 +2481,7 @@ section.section-account .img-circle {
 .table-hover > tbody1 > tr:hover > th {
   background-color: rgba(229, 230, 230, 0.25);
 }
-.input-group-lg > .input-group-content > .form-control,
+.input-group-lg > .input-group-content > ..form-controls,
 .input-group-lg > .input-group-addon {
   height: 45px;
   padding: 0 0;
@@ -2489,33 +2489,33 @@ section.section-account .img-circle {
   line-height: 1.3333333;
   border-radius: 2px;
 }
-select.input-group-lg > .input-group-content > .form-control,
+select.input-group-lg > .input-group-content > ..form-controls,
 select.input-group-lg > .input-group-addon {
   height: 45px;
   line-height: 45px;
 }
-textarea.input-group-lg > .input-group-content > .form-control,
+textarea.input-group-lg > .input-group-content > ..form-controls,
 textarea.input-group-lg > .input-group-addon,
-select[multiple].input-group-lg > .input-group-content > .form-control,
+select[multiple].input-group-lg > .input-group-content > ..form-controls,
 select[multiple].input-group-lg > .input-group-addon {
   height: auto;
 }
-select.input-group-lg > .input-group-content > .form-control,
+select.input-group-lg > .input-group-content > ..form-controls,
 select.input-group-lg > .input-group-addon {
   height: 45px;
   line-height: 45px;
 }
-textarea.input-group-lg > .input-group-content > .form-control,
+textarea.input-group-lg > .input-group-content > ..form-controls,
 textarea.input-group-lg > .input-group-addon,
-select[multiple].input-group-lg > .input-group-content > .form-control,
+select[multiple].input-group-lg > .input-group-content > ..form-controls,
 select[multiple].input-group-lg > .input-group-addon {
   height: auto;
 }
-.floating-label .input-group-lg > .input-group-content > .form-control ~ label,
+.floating-label .input-group-lg > .input-group-content > ..form-controls ~ label,
 .floating-label .input-group-lg > .input-group-addon ~ label {
   font-size: 1.6em;
 }
-.input-group-sm > .input-group-content > .form-control,
+.input-group-sm > .input-group-content > ..form-controls,
 .input-group-sm > .input-group-addon {
   height: 30px;
   padding: 0 0;
@@ -2523,29 +2523,29 @@ select[multiple].input-group-lg > .input-group-addon {
   line-height: 1.5;
   border-radius: 0px;
 }
-select.input-group-sm > .input-group-content > .form-control,
+select.input-group-sm > .input-group-content > ..form-controls,
 select.input-group-sm > .input-group-addon {
   height: 30px;
   line-height: 30px;
 }
-textarea.input-group-sm > .input-group-content > .form-control,
+textarea.input-group-sm > .input-group-content > ..form-controls,
 textarea.input-group-sm > .input-group-addon,
-select[multiple].input-group-sm > .input-group-content > .form-control,
+select[multiple].input-group-sm > .input-group-content > ..form-controls,
 select[multiple].input-group-sm > .input-group-addon {
   height: auto;
 }
-select.input-group-sm > .input-group-content > .form-control,
+select.input-group-sm > .input-group-content > ..form-controls,
 select.input-group-sm > .input-group-addon {
   height: 30px;
   line-height: 30px;
 }
-textarea.input-group-sm > .input-group-content > .form-control,
+textarea.input-group-sm > .input-group-content > ..form-controls,
 textarea.input-group-sm > .input-group-addon,
-select[multiple].input-group-sm > .input-group-content > .form-control,
+select[multiple].input-group-sm > .input-group-content > ..form-controls,
 select[multiple].input-group-sm > .input-group-addon {
   height: auto;
 }
-.floating-label .input-group-sm > .input-group-content > .form-control ~ label,
+.floating-label .input-group-sm > .input-group-content > ..form-controls ~ label,
 .floating-label .input-group-sm > .input-group-addon ~ label {
   font-size: 1em;
 }
@@ -2581,17 +2581,17 @@ select[multiple].input-group-sm > .input-group-addon {
   display: table-cell;
   vertical-align: bottom;
 }
-.input-group .form-control-static {
+.input-group ..form-controls-static {
   display: table-cell;
 }
-.input-group .form-control-static:not(:first-child):not(:last-child) {
+.input-group ..form-controls-static:not(:first-child):not(:last-child) {
   border-radius: 0;
 }
-.input-group .form-control-static:first-child {
+.input-group ..form-controls-static:first-child {
   border-bottom-right-radius: 0;
   border-top-right-radius: 0;
 }
-.input-group .form-control-static:last-child {
+.input-group ..form-controls-static:last-child {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
@@ -2670,15 +2670,15 @@ label {
   top: 0;
   left: 0;
 }
-.form-control-static {
+..form-controls-static {
   font-size: 16px;
 }
-.has-feedback label ~ .form-control-feedback,
-.form-control-feedback {
+.has-feedback label ~ ..form-controls-feedback,
+..form-controls-feedback {
   top: auto;
   bottom: 0;
 }
-.form-control {
+..form-controls {
   padding: 0;
   height: 37px;
   border-left: none;
@@ -2691,44 +2691,44 @@ label {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.form-control.placeholder {
+..form-controls.placeholder {
   color: #969c9c;
 }
-.form-control.placeholder option {
+..form-controls.placeholder option {
   color: #0c0c0c;
 }
-.form-control[disabled],
-.form-control[readonly],
-fieldset[disabled] .form-control {
+..form-controls[disabled],
+..form-controls[readonly],
+fieldset[disabled] ..form-controls {
   background-color: transparent;
   border-bottom-color: rgba(12, 12, 12, 0.2);
   border-bottom-style: dashed;
 }
-.form-control[disabled]::-moz-placeholder,
-.form-control[readonly]::-moz-placeholder,
-fieldset[disabled] .form-control::-moz-placeholder {
+..form-controls[disabled]::-moz-placeholder,
+..form-controls[readonly]::-moz-placeholder,
+fieldset[disabled] ..form-controls::-moz-placeholder {
   color: #b0b5b4;
   opacity: 1;
 }
-.form-control[disabled]:-ms-input-placeholder,
-.form-control[readonly]:-ms-input-placeholder,
-fieldset[disabled] .form-control:-ms-input-placeholder {
+..form-controls[disabled]:-ms-input-placeholder,
+..form-controls[readonly]:-ms-input-placeholder,
+fieldset[disabled] ..form-controls:-ms-input-placeholder {
   color: #b0b5b4;
 }
-.form-control[disabled]::-webkit-input-placeholder,
-.form-control[readonly]::-webkit-input-placeholder,
-fieldset[disabled] .form-control::-webkit-input-placeholder {
+..form-controls[disabled]::-webkit-input-placeholder,
+..form-controls[readonly]::-webkit-input-placeholder,
+fieldset[disabled] ..form-controls::-webkit-input-placeholder {
   color: #b0b5b4;
 }
-.form-control[disabled] ~ label:after,
-.form-control[readonly] ~ label:after,
-fieldset[disabled] .form-control ~ label:after,
-.form-control[disabled] ~ .form-control-line:after,
-.form-control[readonly] ~ .form-control-line:after,
-fieldset[disabled] .form-control ~ .form-control-line:after {
+..form-controls[disabled] ~ label:after,
+..form-controls[readonly] ~ label:after,
+fieldset[disabled] ..form-controls ~ label:after,
+..form-controls[disabled] ~ ..form-controls-line:after,
+..form-controls[readonly] ~ ..form-controls-line:after,
+fieldset[disabled] ..form-controls ~ ..form-controls-line:after {
   display: none;
 }
-textarea.form-control {
+textarea..form-controls {
   padding: 4px 0 4px 0;
 }
 textarea.autosize {
@@ -2742,22 +2742,22 @@ textarea.autosize {
   position: relative;
   margin-bottom: 19px;
 }
-.form-group .form-control:not(.static) ~ label,
-.form-group .form-control:not(.static) ~ .form-control-line {
+.form-group ..form-controls:not(.static) ~ label,
+.form-group ..form-controls:not(.static) ~ ..form-controls-line {
   -webkit-transition: 0.2s ease all;
   -o-transition: 0.2s ease all;
   transition: 0.2s ease all;
 }
-.form-group .form-control ~ label,
-.form-group .form-control ~ .form-control-line {
+.form-group ..form-controls ~ label,
+.form-group ..form-controls ~ ..form-controls-line {
   position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
   pointer-events: none;
 }
-.form-group .form-control ~ label:after,
-.form-group .form-control ~ .form-control-line:after {
+.form-group ..form-controls ~ label:after,
+.form-group ..form-controls ~ ..form-controls-line:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -2770,31 +2770,31 @@ textarea.autosize {
   -o-transition: 0.2s ease all;
   transition: 0.2s ease all;
 }
-.form-group .form-control ~ label {
+.form-group ..form-controls ~ label {
   top: 0;
   margin-bottom: 0;
   font-size: 12px;
   opacity: 0.5;
 }
-.form-group .form-control:focus {
+.form-group ..form-controls:focus {
   border-color: rgba(12, 12, 12, 0.12);
 }
-.form-group .form-control:focus ~ label {
+.form-group ..form-controls:focus ~ label {
   color: #0aa89e;
   opacity: 1;
 }
-.form-group .form-control:focus ~ label:after,
-.form-group .form-control:focus ~ .form-control-line:after {
+.form-group ..form-controls:focus ~ label:after,
+.form-group ..form-controls:focus ~ ..form-controls-line:after {
   visibility: visible;
   width: 100%;
   left: 0;
 }
-.floating-label .form-control ~ label {
+.floating-label ..form-controls ~ label {
   top: 19px;
   font-size: 16px;
 }
-.floating-label .form-control:focus ~ label,
-.floating-label .form-control.dirty ~ label {
+.floating-label ..form-controls:focus ~ label,
+.floating-label ..form-controls.dirty ~ label {
   top: 0px;
   font-size: 12px !important;
 }
@@ -2914,12 +2914,12 @@ textarea.no-resize {
   padding-top: 0;
   margin-bottom: 11px;
 }
-.form-horizontal .form-control ~ .form-control-line {
+.form-horizontal ..form-controls ~ ..form-controls-line {
   left: 12px;
   right: 12px;
   width: auto;
 }
-.form-horizontal .input-group .form-control ~ .form-control-line {
+.form-horizontal .input-group ..form-controls ~ ..form-controls-line {
   left: 0;
   right: 0;
 }
@@ -2953,33 +2953,33 @@ span.help-block {
 .form-horizontal span.help-block {
   right: auto;
 }
-.form-inverse .form-group .form-control {
+.form-inverse .form-group ..form-controls {
   color: #f2f3f3;
   border-bottom-color: rgba(255, 255, 255, 0.25);
 }
-.form-inverse .form-group .form-control::-moz-placeholder {
+.form-inverse .form-group ..form-controls::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5);
   opacity: 1;
 }
-.form-inverse .form-group .form-control:-ms-input-placeholder {
+.form-inverse .form-group ..form-controls:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-.form-inverse .form-group .form-control::-webkit-input-placeholder {
+.form-inverse .form-group ..form-controls::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
-.form-inverse .form-group .form-control ~ label:after,
-.form-inverse .form-group .form-control ~ .form-control-line:after {
+.form-inverse .form-group ..form-controls ~ label:after,
+.form-inverse .form-group ..form-controls ~ ..form-controls-line:after {
   background-color: #a6ede8;
 }
-.form-inverse .form-group .form-control:focus {
+.form-inverse .form-group ..form-controls:focus {
   border-color: rgba(255, 255, 255, 0.25);
 }
-.form-inverse .form-group .form-control:focus ~ label {
+.form-inverse .form-group ..form-controls:focus ~ label {
   color: #a6ede8;
 }
-.form-inverse .form-group .form-control[disabled],
-.form-inverse .form-group .form-control[readonly],
-fieldset[disabled] .form-inverse .form-group .form-control {
+.form-inverse .form-group ..form-controls[disabled],
+.form-inverse .form-group ..form-controls[readonly],
+fieldset[disabled] .form-inverse .form-group ..form-controls {
   border-bottom-color: rgba(255, 255, 255, 0.4);
 }
 .form-inverse select:focus {
@@ -2990,198 +2990,198 @@ fieldset[disabled] .form-inverse .form-group .form-control {
   color: #ff9800;
   opacity: 1;
 }
-.has-warning .form-control {
+.has-warning ..form-controls {
   border-bottom-color: #ff9800;
 }
-.has-warning .form-control:focus,
-.has-warning .form-control.dirty {
+.has-warning ..form-controls:focus,
+.has-warning ..form-controls.dirty {
   border-bottom-color: #ff9800;
 }
-.has-warning .form-control:focus ~ label,
-.has-warning .form-control.dirty ~ label {
+.has-warning ..form-controls:focus ~ label,
+.has-warning ..form-controls.dirty ~ label {
   color: inherit;
 }
-.has-warning .form-control ~ label,
-.has-warning .form-control ~ .form-control-line {
+.has-warning ..form-controls ~ label,
+.has-warning ..form-controls ~ ..form-controls-line {
   color: inherit;
 }
-.has-warning .form-control ~ label:after,
-.has-warning .form-control ~ .form-control-line:after {
+.has-warning ..form-controls ~ label:after,
+.has-warning ..form-controls ~ ..form-controls-line:after {
   background-color: #ff9800;
 }
 .has-warning label,
 .has-warning .control-label,
-.has-warning .form-control-feedback {
+.has-warning ..form-controls-feedback {
   color: #ff9800;
 }
 .form-horizontal .has-warning label,
 .form-horizontal .has-warning .control-label,
-.form-horizontal .has-warning .form-control-feedback {
+.form-horizontal .has-warning ..form-controls-feedback {
   opacity: 1;
 }
 .form-inverse .has-warning .help-block {
   color: #e69c2e;
   opacity: 1;
 }
-.form-inverse .has-warning .form-control {
+.form-inverse .has-warning ..form-controls {
   border-bottom-color: #e69c2e;
 }
-.form-inverse .has-warning .form-control:focus,
-.form-inverse .has-warning .form-control.dirty {
+.form-inverse .has-warning ..form-controls:focus,
+.form-inverse .has-warning ..form-controls.dirty {
   border-bottom-color: #e69c2e;
 }
-.form-inverse .has-warning .form-control:focus ~ label,
-.form-inverse .has-warning .form-control.dirty ~ label {
+.form-inverse .has-warning ..form-controls:focus ~ label,
+.form-inverse .has-warning ..form-controls.dirty ~ label {
   color: inherit;
 }
-.form-inverse .has-warning .form-control ~ label,
-.form-inverse .has-warning .form-control ~ .form-control-line {
+.form-inverse .has-warning ..form-controls ~ label,
+.form-inverse .has-warning ..form-controls ~ ..form-controls-line {
   color: inherit;
 }
-.form-inverse .has-warning .form-control ~ label:after,
-.form-inverse .has-warning .form-control ~ .form-control-line:after {
+.form-inverse .has-warning ..form-controls ~ label:after,
+.form-inverse .has-warning ..form-controls ~ ..form-controls-line:after {
   background-color: #e69c2e;
 }
 .form-inverse .has-warning label,
 .form-inverse .has-warning .control-label,
-.form-inverse .has-warning .form-control-feedback {
+.form-inverse .has-warning ..form-controls-feedback {
   color: #e69c2e;
 }
 .form-horizontal .form-inverse .has-warning label,
 .form-horizontal .form-inverse .has-warning .control-label,
-.form-horizontal .form-inverse .has-warning .form-control-feedback {
+.form-horizontal .form-inverse .has-warning ..form-controls-feedback {
   opacity: 1;
 }
 .has-error .help-block {
   color: #f44336;
   opacity: 1;
 }
-.has-error .form-control {
+.has-error ..form-controls {
   border-bottom-color: #f44336;
 }
-.has-error .form-control:focus,
-.has-error .form-control.dirty {
+.has-error ..form-controls:focus,
+.has-error ..form-controls.dirty {
   border-bottom-color: #f44336;
 }
-.has-error .form-control:focus ~ label,
-.has-error .form-control.dirty ~ label {
+.has-error ..form-controls:focus ~ label,
+.has-error ..form-controls.dirty ~ label {
   color: inherit;
 }
-.has-error .form-control ~ label,
-.has-error .form-control ~ .form-control-line {
+.has-error ..form-controls ~ label,
+.has-error ..form-controls ~ ..form-controls-line {
   color: inherit;
 }
-.has-error .form-control ~ label:after,
-.has-error .form-control ~ .form-control-line:after {
+.has-error ..form-controls ~ label:after,
+.has-error ..form-controls ~ ..form-controls-line:after {
   background-color: #f44336;
 }
 .has-error label,
 .has-error .control-label,
-.has-error .form-control-feedback {
+.has-error ..form-controls-feedback {
   color: #f44336;
 }
 .form-horizontal .has-error label,
 .form-horizontal .has-error .control-label,
-.form-horizontal .has-error .form-control-feedback {
+.form-horizontal .has-error ..form-controls-feedback {
   opacity: 1;
 }
 .form-inverse .has-error .help-block {
   color: #e65045;
   opacity: 1;
 }
-.form-inverse .has-error .form-control {
+.form-inverse .has-error ..form-controls {
   border-bottom-color: #e65045;
 }
-.form-inverse .has-error .form-control:focus,
-.form-inverse .has-error .form-control.dirty {
+.form-inverse .has-error ..form-controls:focus,
+.form-inverse .has-error ..form-controls.dirty {
   border-bottom-color: #e65045;
 }
-.form-inverse .has-error .form-control:focus ~ label,
-.form-inverse .has-error .form-control.dirty ~ label {
+.form-inverse .has-error ..form-controls:focus ~ label,
+.form-inverse .has-error ..form-controls.dirty ~ label {
   color: inherit;
 }
-.form-inverse .has-error .form-control ~ label,
-.form-inverse .has-error .form-control ~ .form-control-line {
+.form-inverse .has-error ..form-controls ~ label,
+.form-inverse .has-error ..form-controls ~ ..form-controls-line {
   color: inherit;
 }
-.form-inverse .has-error .form-control ~ label:after,
-.form-inverse .has-error .form-control ~ .form-control-line:after {
+.form-inverse .has-error ..form-controls ~ label:after,
+.form-inverse .has-error ..form-controls ~ ..form-controls-line:after {
   background-color: #e65045;
 }
 .form-inverse .has-error label,
 .form-inverse .has-error .control-label,
-.form-inverse .has-error .form-control-feedback {
+.form-inverse .has-error ..form-controls-feedback {
   color: #e65045;
 }
 .form-horizontal .form-inverse .has-error label,
 .form-horizontal .form-inverse .has-error .control-label,
-.form-horizontal .form-inverse .has-error .form-control-feedback {
+.form-horizontal .form-inverse .has-error ..form-controls-feedback {
   opacity: 1;
 }
 .has-success .help-block {
   color: #4caf50;
   opacity: 1;
 }
-.has-success .form-control {
+.has-success ..form-controls {
   border-bottom-color: #4caf50;
 }
-.has-success .form-control:focus,
-.has-success .form-control.dirty {
+.has-success ..form-controls:focus,
+.has-success ..form-controls.dirty {
   border-bottom-color: #4caf50;
 }
-.has-success .form-control:focus ~ label,
-.has-success .form-control.dirty ~ label {
+.has-success ..form-controls:focus ~ label,
+.has-success ..form-controls.dirty ~ label {
   color: inherit;
 }
-.has-success .form-control ~ label,
-.has-success .form-control ~ .form-control-line {
+.has-success ..form-controls ~ label,
+.has-success ..form-controls ~ ..form-controls-line {
   color: inherit;
 }
-.has-success .form-control ~ label:after,
-.has-success .form-control ~ .form-control-line:after {
+.has-success ..form-controls ~ label:after,
+.has-success ..form-controls ~ ..form-controls-line:after {
   background-color: #4caf50;
 }
 .has-success label,
 .has-success .control-label,
-.has-success .form-control-feedback {
+.has-success ..form-controls-feedback {
   color: #4caf50;
 }
 .form-horizontal .has-success label,
 .form-horizontal .has-success .control-label,
-.form-horizontal .has-success .form-control-feedback {
+.form-horizontal .has-success ..form-controls-feedback {
   opacity: 1;
 }
 .form-inverse .has-success .help-block {
   color: #45e64a;
   opacity: 1;
 }
-.form-inverse .has-success .form-control {
+.form-inverse .has-success ..form-controls {
   border-bottom-color: #45e64a;
 }
-.form-inverse .has-success .form-control:focus,
-.form-inverse .has-success .form-control.dirty {
+.form-inverse .has-success ..form-controls:focus,
+.form-inverse .has-success ..form-controls.dirty {
   border-bottom-color: #45e64a;
 }
-.form-inverse .has-success .form-control:focus ~ label,
-.form-inverse .has-success .form-control.dirty ~ label {
+.form-inverse .has-success ..form-controls:focus ~ label,
+.form-inverse .has-success ..form-controls.dirty ~ label {
   color: inherit;
 }
-.form-inverse .has-success .form-control ~ label,
-.form-inverse .has-success .form-control ~ .form-control-line {
+.form-inverse .has-success ..form-controls ~ label,
+.form-inverse .has-success ..form-controls ~ ..form-controls-line {
   color: inherit;
 }
-.form-inverse .has-success .form-control ~ label:after,
-.form-inverse .has-success .form-control ~ .form-control-line:after {
+.form-inverse .has-success ..form-controls ~ label:after,
+.form-inverse .has-success ..form-controls ~ ..form-controls-line:after {
   background-color: #45e64a;
 }
 .form-inverse .has-success label,
 .form-inverse .has-success .control-label,
-.form-inverse .has-success .form-control-feedback {
+.form-inverse .has-success ..form-controls-feedback {
   color: #45e64a;
 }
 .form-horizontal .form-inverse .has-success label,
 .form-horizontal .form-inverse .has-success .control-label,
-.form-horizontal .form-inverse .has-success .form-control-feedback {
+.form-horizontal .form-inverse .has-success ..form-controls-feedback {
   opacity: 1;
 }
 .btn-default-bright {

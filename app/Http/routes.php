@@ -36,9 +36,9 @@ Route::group(['middlewareGroups' => ['web']], function(){
 /*Route::get('/', function () {
     return view('index');
 });*/
-Route::get('login', function () {
-    return view('login');
-});
+/*Route::post('login', function () {
+    return $_POST['email'].'   '.$_POST['password'];
+});*/
 Route::get('calander', function () {
     return view('calander');
 });
@@ -55,9 +55,9 @@ Route::get('card', function () {
 Route::get('card1', function () {
     return view('carddemo');
 });
-Route::get('sidebar4', function () {
-    return view('sidebar4');
+Route::get('test', function () {
+    return view('login');
 });
 Route::get('tabs', function () {
-    return view('sidebar41');
+    return view('test');
 });

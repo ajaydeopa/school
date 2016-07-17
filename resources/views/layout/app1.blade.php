@@ -1,5 +1,5 @@
-!DOCTYPE html>
-<!--[if IE 9 ]><html class="ie9"><![endif]-->
+<html>
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,7 +46,7 @@
 
 
 
-       @yield('page_head')
+       @yield('head')
 	</head>
 
 	<body class="menubar-hoverable header-fixed menubar-pin">
@@ -337,12 +337,9 @@
 
 		<!-- BEGIN JAVASCRIPT -->
 
-		<script src="{{URL::to('assets')}}/side/jquery-1.11.2.min.js"></script>
-		
-		
-	
+	<script src="{{URL::to('assets')}}/side/jquery-1.11.2.min.js"></script>
        
-		
+
 		<!-- Put App.js last in your javascript imports -->
 		
 
@@ -351,13 +348,13 @@
         <script src="{{URL::to('assets')}}/side/App.min.js"></script>
 
         <script src="{{URL::to('assets')}}/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-        
+         <script src="{{URL::to('assets')}}/vendors/bower_components/moment/min/moment.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/flot/jquery.flot.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/flot/jquery.flot.resize.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/flot.curvedlines/curvedLines.js"></script>
         <script src="{{URL::to('assets')}}/vendors/sparklines/jquery.sparkline.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/jquery.easy-pie-chart/dist/jquery.easypiechart.min.js"></script>
-        
+         <script src="{{URL::to('assets')}}/vendors/bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/moment/min/moment.min.js"></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/fullcalendar/dist/fullcalendar.min.js "></script>
         <script src="{{URL::to('assets')}}/vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js"></script>
