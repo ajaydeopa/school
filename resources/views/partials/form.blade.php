@@ -14,9 +14,10 @@
                         <div class="navbar-inner">
                             <div class="container">
                                 <ul >
-                                    <li><a href="#tab1" data-toggle="tab">First</a></li>
-                                    <li><a href="#tab2" data-toggle="tab">Second</a></li>
-                                    <li ><a href="#tab3" data-toggle="tab">Third</a></li>
+                                    <li><a href="#tab1" data-toggle="tab">Personal</a></li>
+                                    <li><a href="#tab2" data-toggle="tab">Parents</a></li>
+                                    <li ><a href="#tab3" data-toggle="tab">Academic</a></li>
+                                    <li ><a href="#tab3" data-toggle="tab">Users</a></li>
 
                                 </ul>
                                 <div id="bar" class="progress progress-striped active">
@@ -27,7 +28,7 @@
 
                     {{ Form::open() }}
                     <div class="tab-content">
-                        <!--tab1 -->
+                        <!--tab1 Personal-->
                         <div class="tab-pane" id="tab1">
 
                             <!--Name -->
@@ -232,9 +233,13 @@
                         </div>
                         <!--tab1 -->
 
-
-                        <!--tab2 -->
+                        <!--tab2 Parents-->
                         <div class="tab-pane" id="tab2">
+                             </div>
+                        <!--tab2 -->
+
+                        <!--tab3 Academic -->
+                        <div class="tab-pane" id="tab3">
                             <div class="row m-b-10 ">
                                 <!--Joining date-->
                                 <div class="col-sm-4">
@@ -274,9 +279,9 @@
                             </div>
 
                         </div>
-                        <!--tab2 -->
                         <!--tab3 -->
-                        <div class="tab-pane" id="tab3">
+                        <!--tab4 Users-->
+                        <div class="tab-pane" id="tab4">
 
                             <div class="row m-b-10 ">
                                 <!--Email-->
@@ -303,7 +308,7 @@
                             </div>
 
                         </div>
-                        <!--tab3 -->
+                        <!--tab4 -->
               <div class=" m-t-20">
                         <ul class="pager wizard m-t-20 " style="float:right">
 
