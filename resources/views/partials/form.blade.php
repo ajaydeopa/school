@@ -17,7 +17,7 @@
                                     <li><a href="#tab1" data-toggle="tab">Personal</a></li>
                                     <li><a href="#tab2" data-toggle="tab">Parents</a></li>
                                     <li ><a href="#tab3" data-toggle="tab">Academic</a></li>
-                                    <li ><a href="#tab3" data-toggle="tab">Users</a></li>
+                                    <li ><a href="#tab4" data-toggle="tab">Users</a></li>
 
                                 </ul>
                                 <div id="bar" class="progress progress-striped active">
